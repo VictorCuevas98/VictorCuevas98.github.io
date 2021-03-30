@@ -1,0 +1,400 @@
+html,body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    height:100%;
+    width:100%;
+    margin: 0px;
+}
+
+#header, .btn-portafolio{
+    overflow: hidden;
+}
+
+.link{
+    text-decoration: none;
+    color: #3B5998;
+}
+/*Header de animacion*/
+#bg-video{
+    position: absolute;
+    opacity: 0;
+    top:-20%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bg-image{
+    position: absolute;
+    top:0;
+    min-width: 100%;
+    height:auto;
+}
+
+#svg1, #svg2{
+    visibility: hidden;
+}
+
+.cls-1{
+    fill:none;
+    stroke:#fcfcfc;
+    stroke-width: 1;
+    stroke-miterlimit:10;
+}
+
+.cls-2{
+    fill:none;
+    stroke:#fcfcfc;
+    stroke-width: 1;
+    stroke-miterlimit:10;
+}
+
+/* skill icons*/
+.skill {
+    display: block;
+    position: relative;
+}
+
+.skill h5{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+    opacity: 0;
+    -webkit-transition: bottom ease 1s,opacity ease 1s;
+    -o-transition: bottom ease 1s,opacity ease 1s;
+    transition: bottom ease 1s,opacity ease 1s;
+}
+
+.skill:hover h5{
+    opacity: 1;
+}
+
+/*Portafolio*/
+.image-container {
+    padding: 1rem;
+}
+
+.img-responsive{
+    height: auto;
+    max-width: 100%;
+}
+
+.btn-portafolio {
+    background-color: #5A636B;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    max-width: 400px;
+    -webkit-box-shadow: 0 0 10px #c0c6c9;
+    box-shadow: 0 0 10px #c0c6c9;
+}
+
+#experience .btn-portafolio {
+    background-color:white;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    max-width: 400px;
+    -webkit-box-shadow: 0 0 10px #c0c6c9;
+    box-shadow: 0 0 10px #c0c6c9;
+}
+
+.btn-portafolio h4{
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+    color: #f5f9fa;
+    opacity: 0;
+    -webkit-transition: bottom ease .3s,opacity ease .3s;
+    -o-transition: bottom ease .3s,opacity ease .3s;
+    transition: bottom ease .3s,opacity ease .3s;
+}
+
+#experience .btn-portafolio h4{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+    color: #f5f9fa;
+    opacity: 0;
+    -webkit-transition: bottom ease .3s,opacity ease .3s;
+    -o-transition: bottom ease .3s,opacity ease .3s;
+    transition: bottom ease .3s,opacity ease .3s;
+}
+
+.btn-portafolio img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.btn-portafolio:hover h4{
+    bottom: 50%;
+    opacity: 1;
+}
+
+#experience .btn-portafolio:hover h4{
+    top: 10%;
+    opacity: 1;
+}
+
+.btn-portafolio:hover img{
+    opacity: .2;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*Botones del navegador*/
+
+.method-hover {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background:#B0C1D1;
+    font-size: 19px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+.method-hover:after, .method-hover:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.method-hover:after {
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+.method-hover:before {
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.method-hover:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.method-hover:hover:before, .method-hover:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+/*Boton enviar*/
+#boton-enviar{
+    
+    border-radius: 0px;
+}
+
+/* Botones de redes sociales */
+.social {
+	margin: 2em 2em; width: 100px; height: 100px; 	
+	display: block; text-align: center; line-height:103px; color: #fff;
+	
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+}
+.social > div {
+	width: 100px; height: 100px; background: #000;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+.social >.front {
+	transform:translateZ(40px);
+}
+.social >.back {
+	background: #3B5998; font-size: 3em;
+	transform:rotateY(-100deg) translateZ(40px);
+}
+
+/*  Social Media Colors 
+	Facebook #3B5998
+	Flickr #FE0883
+	Foursquare #8FD400
+	Google+ #C63D2D
+	Instagram #4E433C
+	Linkedin #4875B4
+	Tumblr #2B4964
+	Twitter #33CCFF
+	Vimeo #86B32D
+	Youtube #FF3333
+	Dribbble #ea4c89
+*/
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+.social.social-pinterest > .back { background: #e3262e; }
+.social.social-googleplus > .back { background: #dd4B39; }
+.social.social-skype > .back { background: #12A5F4; }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-dribbble > .back { background: #ea4c89; }
+
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
+}
+
+a{
+    color:#3B5998;
+    text-decoration: none;
+}
+
+a.social{
+    color: white;
+    text-decoration: none;
+}
+
+#portafolio hr, #experience hr{
+    border: 3px solid #B0C1D1; border-radius: 50%/3px; height: 0px; text-align: center;
+}
+
+#skillset hr, #contact hr{
+    border: 3px solid #F0F8FF; border-radius: 50%/3px; height: 0px; text-align: center;
+}
+
+.modal-content .section-hr{
+    border: 2px solid #B0C1D1; border-radius: 50%/3px; height: 0px; text-align: center;
+}
+
+.footer .section-hr{
+    border: 2px solid #B0C1D1; border-radius: 50%/3px; height: 0px; text-align: center;
+}
+
+.svg-skill{
+    width: 100px;
+    height: 100px;
+    border-radius: 2rem;
+}
+
+header#header{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 300px; 
+    background-color:black;
+}
+
+#portafolio, #experience{ 
+    /*color 3*/
+    background-color:#F0F8FF ;
+}
+
+#skillset, #contact{
+    background-color: #B0C1D1;
+}
+
+footer#footer{
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+}
+
+#icono{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+
+#text1,#text2{
+    color: #afc0d0;
+    padding: 0;
+    position: absolute;
+}
+#text1{
+    color: white;
+    font-size: 29px;
+}
+
+#text2{
+    font-size: 24px;
+}
+
+span.terminal{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3DE617;
+}
+
+.navegador{
+    position: relative;
+    min-height: 30px;
+    background-color: #B0C1D1;
+}
+
+.contenido{
+    background-image: url("/assets/fondo.jpg") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+    width: 100% ;
+    text-align: center;
+}
+.column{
+    padding: 0px;
+    width: 160px;
+}
+
+.color1{
+    color: #909EAB;
+}
+
+.color2{
+    color: #5A636B;
+}
+
+.color2-1{
+    color: #F0F8FF;
+}
+
+
+
+.color3{
+    color: #C5D8EB;
+}
+
+.color4{
+    color: #D0E4F7;
+}
+
+.color5{
+    color: #B0C1D1;
+}
+
+p.t2{
+    color: black; 
+    font-size: 1px;
+}
+
