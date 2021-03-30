@@ -17,7 +17,7 @@ html,body{
 #bg-video{
     position: absolute;
     opacity: 0;
-    top:-20%;
+    top:-30%;
     min-width: 100%;
     min-height: 100%;
 }
