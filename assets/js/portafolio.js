@@ -85,6 +85,7 @@ function changeProject(index) {
     $description.html(portfolioData[index].description);
     $imgmodal.attr('src', portfolioData[index].asset);
     //updates buttons
+   /*
     var buttons = portfolioData[index].buttons;
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i] === false) {
@@ -93,6 +94,7 @@ function changeProject(index) {
             $($devices[i]).removeClass('hide');
         }
     }
+   */
     //resets video playback (stops) and changes poster
     //resetVideo(index);
 }
