@@ -1,3 +1,10 @@
+    function reproducir(){
+        var video = document.getElementById('bg-video');
+        video.onplay();
+    }
+
+    window.addEventListener('load', reproducir, false);
+
    /* boton de cerrar */
    $(function () {
         $("[alt='tooltip']").tooltip();
@@ -26,7 +33,9 @@
     .from("#text1",{duration:1, y:-40, ease:"slow"},"-=1")
     .to("#text1",{duration:3, text: "Victor Manuel Cuevas"});
 
+
     gsap.to("#bg-video",{duration:2, opacity: 0.2, delay:6});
+
 
     const lt = gsap.timeline({repeat:10, repeatDelay:2, yoyo:true, delay: 6});
     lt.to(".terminal", {duration: 4, text: ">_ Proccesses: 2010 total, 2 running, 9 stuck, 199 sleeping, 981 theads"})
