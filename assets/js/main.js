@@ -1,6 +1,6 @@
     function reproducir(){
         var video = document.getElementById('bg-video');
-        video.onplay();
+        video.play();
     }
 
     window.addEventListener('load', reproducir, false);
