@@ -1,6 +1,6 @@
 var portfolioData = [{
-    'title': 'Sistema de Monitoreo y Control',
-    'subtitle': 'Gestion en tiempo real de mermas para Jugos del Valle',
+    'title': 'Sistema de Monitoreo y Control (WMS)',
+    'subtitle': 'Gestion en tiempo real de mermas para Jugos del Valle. Sistema de gestión operativa de varias lineas de producción',
     'description': 'MYC (Monitoreo y Control de Merma) fue desarrollado y diseñado para gestionar las mermas en tiempo real usando Laravel, OAuth2, JQuery, JavaScript, Mysql, creando API Rest y consumiendo los servicios desde un Cliente HTTP, es un sistema web diseñado por un equipo de desarrolladores de la <a href="https://www.ubam.com.mx/comunidaduniversitaria.html">Universidad Bancaria de México</a> para Coordinadores de <a href="https://jugosdelvalle.com.mx/">Jugos del Valle</a>.',
     'code': 'monitoreo',
     'buttons': ['assets/video/videomonitoreo.pm4', 'http://monitoreoControl.com'],
