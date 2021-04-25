@@ -28,7 +28,7 @@
     gsap.to(".pluma1", {duration: 3, x: -1000, opacity: 0 , ease: "slow (0.1, 0.1, false)", delay: 2});
     
     let tl = gsap.timeline({delay: 2})
-    .to("#text2", {duration:2, text: "Ingeniero de Software"})
+    .to("#text2", {duration:2, text: "Web Developer"})
     .to("#text2",{duration:1, y:40, ease:"slow"})
     .from("#text1",{duration:1, y:-40, ease:"slow"},"-=1")
     .to("#text1",{duration:3, text: "Victor Cuevas"});
