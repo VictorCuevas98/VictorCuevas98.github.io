@@ -5,6 +5,37 @@ html,body{
     margin: 0px;
 }
 
+#form-contact .caracteres, #contactForm label[for="descripcion"] {
+    display: inline-block;
+}
+#form-contact .caracteres {
+    color: green;
+}
+
+#form-contact #respuesta {
+    display: none;
+    padding: 6px;
+    background: #008DE4;
+    color: #FFF;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid #0076BE;
+    cursor: pointer;
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+#n1, #n2{
+    display: inline-block;
+    width: 20px !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0;
+    text-align: center;
+}
+
 #header, .btn-portafolio{
     overflow: hidden;
 }
