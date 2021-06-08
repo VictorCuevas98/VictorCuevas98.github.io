@@ -25,5 +25,4 @@ if (mail($emailuser, $messageuser, "<b>Nombre</b>: ".$nombre."<br><b>Correo</b>:
     die($nombre.", El email se ha enviado correctamente.");
 }
 echo "Error, no se ha podido enviar el correo, inténtelo más tarde.";
-
 //comentario problema
