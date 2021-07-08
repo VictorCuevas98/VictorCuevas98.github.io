@@ -32,7 +32,7 @@
 </head>
 <body id="app">
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="container">
         <video src="assets/video/videobackground.mp4" autoplay loop id="bg-video" muted> 
             Tu navegador no admite el elemento <code>video</code>
         </video>
@@ -62,11 +62,11 @@
     </header>
 
     <!-- Navbar -->
-    <div id="navbar-parent">
-        <nav id="navbar" class="navegador navbar navbar-expand-lg navbar-light shadow-lg">
+    <div id="navbar-parent" class="container" style="padding-left: 0; padding-right: 0;">
+        <nav id="navbar" class="navegador navbar navbar-expand-lg navbar-dark shadow-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="">
-                    <img src="assets/img/favicon-152.png" alt="" width="50" height="auto" class="mx-3"><span class="text-white">Sr. </span><span style="color: #85929E">Cuevas</span>
+                    <img src="assets/img/favicon-152-white.png" alt="" width="50" height="auto" class="mx-3"><span class="text-white">Ing. </span><span style="color: #F27141">Cuevas</span>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -108,9 +108,9 @@
         </nav>
     </div>
 
-    <div id="portafolio" class="py-5 px-5">
+    <div id="portafolio" class="py-5 px-5 container">
         <div class="container">
-            <div class="text-center"><h2>PORTAFOLIO</h2></div>
+            <div class="text-center text-white"><h2>PORTAFOLIO</h2></div>
             <hr class="section-hr">
             <div class="row justify-content-center my-5">
                 <div class="col-sm-12 col-md-6 col-xs-12 image-container">
@@ -173,7 +173,7 @@
         </div>
     </div>
 
-    <div id="skillset" class="py-5 px-5">
+    <div id="skillset" class="py-5 px-5 container" data-overlay="7">
         <div class="container-fluid">
             <div class="text-center text-white"><h2>TECNOLOGIAS</h2></div>
             <hr class="section-hr">
@@ -222,9 +222,9 @@
         </div>
     </div>
 
-    <div id="experience" class="py-5 px-5">
+    <div id="experience" class="py-5 px-5 container">
         <div class="container-fluid">
-            <div class="text-center"><h2>EXPERIENCIA</h2></div>
+            <div class="text-center text-white"><h2>EXPERIENCIA</h2></div>
             <hr class="section-hr">
             <div class="row justify-content-center my-5">
                 <div class="col-md-4 col-xs-12 image-container">
@@ -301,7 +301,7 @@
         </div>
     </div>
 
-    <div id="contact" class="py-5 px-5" style="background-image: url(assets/img/desktop1.jpeg);" data-overlay="7">
+    <div id="contact" class="py-5 px-5 container" data-overlay="7">
         <div class="container-fluid">
             <div class="text-center text-white"><h2>CONTACT</h2></div>
             <hr class="section-hr">
@@ -342,7 +342,7 @@
         </div>
     </div>
 
-    <footer id="footer" class="bg-white text-center py-5">
+    <footer id="footer" class="bg-dark text-center py-5 h-auto container" >
         <div class="container">
             <div class="row g-2">
                 <div class="col-sm-4 col-xs-4">
@@ -379,6 +379,10 @@
         </div>
         <hr class="section-hr">
         <div class="col aligin-self-center pb-4 pt-2">
+            <span class="text-info">
+                Everyone thinks of changing the world, but no one thinks of changing himself. <br>
+                -Leo Tolstoy
+            </span>
             <span style="color: #85929E">Developed and designed by <a href="https://victorcuevas98.github.io/">Victor Cuevas</a>. ©
                 <script type="text/javascript">
 

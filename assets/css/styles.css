@@ -3,6 +3,7 @@ html,body{
     height:100%;
     width:100%;
     margin: 0px;
+    background-color: #A1A9B3;
 }
 
 #form-contact .caracteres, #contactForm label[for="descripcion"] {
@@ -85,6 +86,7 @@ html,body{
 }
 
 .skill h5{
+    color: white;
     display: block;
     margin: 0;
     position: absolute;
@@ -115,7 +117,7 @@ html,body{
 }
 
 .btn-portafolio {
-    background-color: #5A636B;
+    background-color: #8C4C35;
     display: block;
     position: relative;
     margin: 0 auto;
@@ -124,8 +126,8 @@ html,body{
     margin-bottom: 0px;
     margin-left: auto;
     max-width: 400px;
-    -webkit-box-shadow: 0 0 10px #c0c6c9;
-    box-shadow: 0 0 10px #c0c6c9;
+    -webkit-box-shadow: 0 0 5px #BF5934;
+    box-shadow: 0 0 5px #BF5934;
 }
 
 #experience .btn-portafolio {
@@ -200,12 +202,15 @@ html,body{
 }
 
 /*Botones del navegador*/
+#subnav ul a li{
+    color: white;
+}
 
 .method-hover {
     cursor: pointer;
     position: relative;
     padding: 10px 20px;
-    background:#B0C1D1;
+    background:#40352C;
     font-size: 19px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -216,20 +221,20 @@ html,body{
     width: 10px;
     height: 10px;
     position: absolute;
-    border: 0px solid #fff;
+    border: 0px solid #F27141;
     transition: all 1s;
 }
 .method-hover:after {
     top: 0px;
     left: 0px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 1px solid #F27141;
+    border-left: 1px solid #F27141;
 }
 .method-hover:before {
     bottom: 0px;
     right: 0px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 1px solid #F27141;
+    border-right: 1px solid #F27141;
 }
 .method-hover:hover {
     border-top-right-radius: 0px;
@@ -336,11 +341,20 @@ header#header{
 
 #portafolio, #experience{ 
     /*color 3*/
-    background-color:#F0F8FF ;
+    background-color:#3B403A ;
 }
 
-#skillset, #contact{
-    background-color: #B0C1D1;
+#skillset{
+    background-image: url('../img/sunset.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#contact{
+    background-image: url('../img/desktop1.jpeg');
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 footer#footer{
@@ -380,7 +394,7 @@ span.terminal{
 .navegador{
     position: relative;
     min-height: 30px;
-    background-color: #B0C1D1;
+    background-color: #182625;
 }
 
 .contenido{
