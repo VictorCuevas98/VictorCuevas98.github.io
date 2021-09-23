@@ -1,41 +1,31 @@
-var portfolioData = [{
-    'title': 'Sistema de Monitoreo y Control (WMS)',
-    'subtitle': 'Gestion en tiempo real de mermas para Jugos del Valle. Sistema de gestión operativa de varias lineas de producción',
-    'description': 'MYC (Monitoreo y Control de Merma) fue desarrollado y diseñado para gestionar las mermas en tiempo real usando Laravel, OAuth2, JQuery, JavaScript, Mysql, creando API Rest y consumiendo los servicios desde un Cliente HTTP, es un sistema web diseñado por un equipo de desarrolladores de la <a href="https://www.ubam.com.mx/comunidaduniversitaria.html">Universidad Bancaria de México</a> para Coordinadores de <a href="https://jugosdelvalle.com.mx/">Jugos del Valle</a>.',
-    'code': 'monitoreo',
-    'buttons': ['assets/video/videomonitoreo.pm4', 'http://monitoreoControl.com'],
-    'asset': 'assets/img/portafolio/monitorecontrol.jpg'
-}, {
-    'title': 'Xynergia Servicios Avanzados',
-    'subtitle': 'Web de Contacto Responsivo',
-    'description': 'Xynergia.com es una pagina web diseñada de forma responsiva por desarrolladores de <a href="www.xynergia.com">Xynergia</a> usando CSS3, Bootrstrap, JavaScript, JQuery, Illustrator, y patrones de diseño. (Atomic Design)',
-    'code': 'xynergia',
+var experiencieData = [{
+    'puesto': 'Becario Web Developer | México, CDMX | enero 2019 - noviembre 2019',
+    'actividades': ['Analizar los requerimientos del cliente siguiendo la metodología ágil SCRUM', 'Desarrollar y diseñar actualizaciones basadas en los requerimientos del cliente de un solo modulo al mes','Usar la plataforma trello para dar seguimiento de los avances totales','Usar control de versiones con Git para asegurar el progeso diario o semanal'],
+    'herramientas': 'Gestion en tiempo real de mermas para Jugos del Valle. Sistema de gestión operativa de varias lineas de producción',
     'buttons': [false, 'http://xynergia.com'],
-    'asset': 'assets/img/portafolio/xynergia.jpg'
-},{
-    'title': 'Sistema de Abasto, Inventario y Control de Almacenes (SAICA)',
-    'subtitle': 'Administracion y distribucion de artículos medicos a hospitales, clínicas, centros de salud de la Secretaría de Salud de la Ciudad de México',
-    'description': 'SAICA es un sistema web programado y diseñado para la Secretaría de Salud de la Ciudad de México para controlar las adquisiciones que se generan, administrar contratos con proveedores y ofrecer una mejor gestion de los contratos validados.',
-    'code': 'saica',
+    'code': 'xynergia',
+}, {
+    'puesto': 'Web Developer Back-End',
+    'actividades': ['Diseñar e implementar nuevas funciones para renovar el sistema de abasto, inventario y control de almacenes para la Secretaría de Salud', 'Trabajar en el mantenimiento y desarrollo tecnológico del sistema', 'Colaborar en la revisión del código con la ayuda del control de versiones GIT'],
+    'herramientas': ['Frameworks: Laravel v6.0, Bootrstrap v5.1', 'Lenguage: PHP v7.*, CSS3, JavaScript ES5','Librerias de JavaScritps: Jquery, Select2, SweetAlert, etc', 'IDE: PhpStorm JetBrains, Visual Studio Code', 'Control de Versiones: Git', 'Base de Datos: PostgreSQL'],
     'buttons': [false, 'https://tics.finanzas.cdmx.gob.mx/saica/public/login'],
-    'asset': 'assets/img/portafolio/saica.jpg'
+    'code': 'sedesa',
 }];
 
 /*----------  MODAL CLICKS  ----------*/
 
 var currentProjectIndex = 0;
 
-var $portfolioModal = $('#portafolio-modal'),
-    $portfolioBtn = $('.btn-portafolio'),
-    $imgmodal = $('#img-modal'),
-    $btnlink = $('#btn-link');
+var $portfolioModal = $('#experiencia-modal'),
+    $portfolioBtn = $('.btn-experiencia'),
+    $btnlink = $('#btn-experiencia');
 
 //portfolio click
 $portfolioBtn.click(function () {
 
     var index = $portfolioBtn.index(this);
     currentProjectIndex = index;
-    changeProject(currentProjectIndex);
+    changeExperience(currentProjectIndex);
 
     //open modal
     $portfolioModal.modal('show');
@@ -51,7 +41,7 @@ var $arrowLeft = $('#arrow-left'),
 
 $arrowLeft.click(function () {
 
-    currentProjectIndex = (currentProjectIndex === 0) ? (portfolioData.length - 1) : (currentProjectIndex -= 1);
+    currentProjectIndex = (currentProjectIndex === 0) ? (experiencieData.length - 1) : (currentProjectIndex -= 1);
     changeProject(currentProjectIndex);
 
 
@@ -59,28 +49,33 @@ $arrowLeft.click(function () {
 
 $arrowRight.click(function () {
 
-    currentProjectIndex = (currentProjectIndex === portfolioData.length - 1) ? (currentProjectIndex = 0) : (currentProjectIndex += 1);
+    currentProjectIndex = (currentProjectIndex === experiencieData.length - 1) ? (currentProjectIndex = 0) : (currentProjectIndex += 1);
     changeProject(currentProjectIndex);
 
 });
 
-var $title = $('#portfolio-project-title'),
-    $subtitle = $('#portfolio-project-subtitle'),
-    $description = $('#portfolio-project-description'),
-    $video = $('#portfolio-video'),
+var $puesto_experiencia = $('#puesto_experiencia'),
+    $actividades = $('#actividades_experiencia'),
+    $herramientas = $('#herramientas_experiencia'),
     $devices = $('.btn-device');
 
-function changeProject(index) {
+function changeExperience(index) {
 
     //fill data
-    $title.text(portfolioData[index].title);
-    $subtitle.text(portfolioData[index].subtitle);
-    $description.html(portfolioData[index].description);
-    $imgmodal.attr('src', portfolioData[index].asset);
-    $btnlink.attr('href', portfolioData[index].buttons[1]);
+    $puesto_experiencia.text(experiencieData[index].puesto);
+    var activities = experiencieData[index].actividades;
+    for (var number = 0; number<activities.length; number++){
+        $actividades.append('<li>'+experiencieData[index].actividades[number]+'</li>')
+    }
+    var tools = experiencieData[index].herramientas;
+    for (var number1 = 0; number1<tools.length; number1++){
+        $herramientas.append('<li>'+experiencieData[index].herramientas[number1]+'</li>');
+    }
+
+    $btnlink.attr('href', experiencieData[index].buttons[1]);
     //updates buttons
-   
-    var buttons = portfolioData[index].buttons;
+
+    var buttons = experiencieData[index].buttons;
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i] === false) {
             $($devices[i]).addClass('visually-hidden');
