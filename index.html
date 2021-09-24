@@ -33,15 +33,15 @@
 <body id="app">
     <!-- Header -->
     <header id="header" class="container-lg">
-        <video src="assets/video/videobackground.mp4" autoplay loop id="bg-video" muted> 
+        <video src="assets/video/videobackground.mp4" autoplay loop id="bg-video" muted>
             Tu navegador no admite el elemento <code>video</code>
         </video>
         <span class="terminal"></span>
         <!--Main Animation-->
-        <div class="row h-100 pluma justify-content-center text-center align-items-center">  
+        <div class="row h-100 pluma justify-content-center text-center align-items-center">
             <h2 id="text1">https://VICTORCUEVAS98.github.io/</h2>
             <h2 id="text2"></h2>
-            <div class="column col-sm-6 col-xl-6 pluma1"><p class="t2">texto</p>   
+            <div class="column col-sm-6 col-xl-6 pluma1"><p class="t2">texto</p>
                 <svg id="svg1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.69 20"><title>pluma punta</title>
                     <path class="cls-1" d="M114,31.51l-37.25.63C58.5,32.76,44,33.51,44,33.51v15C56.79,49.17,76,50,93.21,50.26l20.75.25" transform="translate(-7.35 -31.01)"/>
                     <path class="cls-1" d="M113.93,37.51h-66v-2l66.1-.73" transform="translate(-7.35 -31.01)"/>
@@ -73,7 +73,7 @@
                 </button>
                 <div class="navbar-collapse collapse" id="subnav" aria-expanded="false">
                   <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <a href="#portafolio">
                             <li class="nav-item m-2 method-hover">
                                 Portafolio
@@ -113,36 +113,26 @@
             <div class="text-center text-white"><h2>PORTAFOLIO</h2></div>
             <hr class="section-hr">
             <div class="row justify-content-center my-5">
-                <div class="col-sm-12 col-md-6 col-xs-12 image-container">
+                <div class="col-sm-12 col-md-4 col-xs-12 image-container">
                     <a class="btn-portafolio">
                         <img class="img-fluid" src="assets/img/portafolio/monitorecontrol.jpg" alt="">
                         <h4>Control de Merma</h4>
                     </a>
                 </div>
-                
-                <!--
-                <div class="col-sm-6 col-md-3 col-xs-12 image-container">
-                    <a class="btn-portafolio">
-                        <img class="img-fluid" src="assets/img/portafolio/clubcontenido.jpg" alt="">
-                        <h4>Xynergia | Club de Contenido</h4>
-                    </a>
-                </div>
-                -->
 
-                <div class="col-sm-12 col-md-6 col-xs-12 image-container">
+                <div class="col-sm-12 col-md-4 col-xs-12 image-container">
                     <a class="btn-portafolio">
                         <img class="img-fluid" src="assets/img/portafolio/xynergia.jpg" alt="">
                         <h4>Xynergia | Pagina de Contacto</h4>
                     </a>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-xs-12 image-container">
+                <div class="col-sm-12 col-md-4 col-xs-12 image-container">
                     <a class="btn-portafolio">
                         <img class="img-fluid" src="assets/img/portafolio/saica.jpg" alt="">
                         <h4>Secretaría de Salud | SAICA</h4>
                     </a>
                 </div>
-                -->
             </div>
         </div>
     </div>
@@ -160,10 +150,10 @@
                     <div class="mx-5" id="porfolio-image-wrapper">
                         <img id="img-modal" class="img-fluid" src="" alt="">
                     </div>
-                    <div class="mt-4 mx-4"><hr class="section-hr"></div>     
+                    <div class="mt-4 mx-4"><hr class="section-hr"></div>
                     <div class="mx-5 text-center mt-2">
                         <a href="assets/video/videocontrol.mp4" id="btn-video" class="visually-hidden btn btn-outline-dark my-2 btn-device mr-2">Video</a>
-                        <a href="" id="btn-link" class="visually-hidden btn btn-outline-dark my-2 btn-device">Link</a> 
+                        <a href="" id="btn-link" class="visually-hidden btn btn-outline-dark my-2 btn-device">Link</a>
                         <p id="portfolio-project-description"></p>
                     </div>
                 </div>
@@ -226,7 +216,7 @@
             <hr class="section-hr">
             <div class="row justify-content-center my-5">
                 <div class="col-md-4 col-xs-12 image-container">
-                    <a class="btn-experiencia" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#modal-resumen">
+                    <a class="btn-experience" style="border-radius: 40px;">
                         <img class="img-fluid" src="assets/img/xyn.jpg" alt="">
                         <h4 class="text-dark text-center">Xynergia Servicios Avanzados S.A de C.V</h4>
                     </a>
@@ -234,92 +224,48 @@
             </div>
         </div>
     </div>
-    <div id="experiencia-modal" class="modal fade" tabindex="-1" aria-labelledby="Portfolio Projects" role="dialog" style="display: none;">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="position-relative m-2">
-                    <button type="button" class="position-absolute btn-close top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h1 class="text-center mt-5 mb-0" id="name_text">Victor Manuel Cuevas</h1>
-                    <p style="font-size: 15px;" class="text-center text-muted" id="email_text">Estado de México | axte_vic@hotmail.com</p>
-                    <p style="font-size: 20px;" class="text-center" id="resume_text">Front-End Web Developer apasionado por las tecnologias, automaticacion y programacion. Esto más que una profesion es mi distracción. <img width="15" height="auto" src="assets/img/heart-solid.svg" alt=""> </p>
-                </div>
-                <div class="my-3 mx-4"><hr class="section-hr"></div>
-                <div class="mx-4">
-                    <ul class="list-unstyled">
-                        <strong id="puesto_experiencia">Becario Web Developer | México, CDMX | enero 2019 - noviembre 2019</strong>
-                        <li>
-                            <div style="height: 28px; width: 100%; background-color: #5A636B;" class="my-3 text-white">
-                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;Actividades principales.</h5>
-                            </div>
-                        </li>
-                        <ul class="ml-5" id="actividades_experiencia">
-                            <li>Conocimiento solido de HTML, CSS y JavaScript standares y compatibilidad con navegadores.</li>
-                            <li>Experiencia Front-end con diseño responsivo, CSS3, Jquery, GSAP y Bootstrap.</li>
-                            <li>Experiencia en Back-end con Php, Laravel, Authorization/Authentication, Passport, creacion y consumo de RESTful APIs.</li>
-                            <li>Habilidades creativas de diseño gráfico y de interfaz de usuario con Illustrator y código SVG.</li>
-                            <li>Gestion eficiente del flujo de trabajo con Bash, Git, Ubuntu 16.04, Apache.</li>
-                            <li>Conocimientos Basicos de adminitracion de base de datos relacionales con Mysql y normalización. </li>
-                            <li>Inglés Intermedio Avanzado</li>
-                        </ul>
 
-                        <li>
-                            <div style="height: 28px; width: 100%; background-color: #5A636B;" class="my-3 text-white">
-                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;Herramientas. (lenguages de programacion, frameworks, IDES, etc.) </h5>
-                            </div>
-                        </li>
-                        <ul class="ml-5" id="herramientas_experiencia">
-                            <li>Desarrollo de nuevos modulos interactivos con JavaScript, Jquery en Landig Page.</li>
-                            <li>Implementacion, actualización de estilos para el sitio oficial Xynergia.</li>
-                            <li>Asistencia para el diseño de propuestas usando Adobe XD, Sketch y puesta en marcha con CSS3, Bootrsap, Jquery.</li>
-                            <li>Seguimiendo a posibles modificaciones, errores, o nuevos requerimientos lanzados por el cliente o empresa.</li>
-                        </ul>
-                    </ul>
-                    <div class="mx-5 text-center mt-2">
-                        <a href="" id="btn-experiencia" class="visually-hidden btn btn-outline-dark my-2 btn-device">Link</a>
-                        <p id="experience-description"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--modal-resumen-->
-    <div class="modal fade" id="modal-resumen" tabindex="-1" aria-labelledby="ModalLabel" role="dialog" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+    <div class="modal fade" id="experiencia-modal" tabindex="-1" aria-labelledby="ModalLabel" role="dialog" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="position-relative m-2">
               <button type="button" class="position-absolute btn-close top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h1 class="text-center mt-5 mb-0">Victor Manuel Cuevas</h1>
+                <h1 class="text-center mt-5 mb-0">Victor Manuel Cuevas González</h1>
                 <p style="font-size: 15px;" class="text-center text-muted">Estado de México | axte_vic@hotmail.com</p>
                 <p style="font-size: 20px;" class="text-center">Front-End Web Developer apasionado por las tecnologias, automaticacion y programacion. Esto más que una profesion es mi distracción. <img width="15" height="auto" src="assets/img/heart-solid.svg" alt=""> </p>
             </div>
             <ul class="list-unstyled">
+                <strong class="text-center" id="puesto_experiencia"></strong>
                 <li>
                     <div style="height: 28px; width: 100%; background-color: #5A636B;" class="my-3 text-white">
-                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;Conocimientos</h5>
+                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;Actividades</h5>
                     </div>
                 </li>
-                    <ul class="ml-5">
-                        <li>Conocimiento solido de HTML, CSS y JavaScript standares y compatibilidad con navegadores.</li>
-                        <li>Experiencia Front-end con diseño responsivo, CSS3, Jquery, GSAP y Bootstrap.</li>
-                        <li>Experiencia en Back-end con Php, Laravel, Authorization/Authentication, Passport, creacion y consumo de RESTful APIs.</li>
-                        <li>Habilidades creativas de diseño gráfico y de interfaz de usuario con Illustrator y código SVG.</li>
-                        <li>Gestion eficiente del flujo de trabajo con Bash, Git, Ubuntu 16.04, Apache.</li>
-                        <li>Conocimientos Basicos de adminitracion de base de datos relacionales con Mysql y normalización. </li>
-                        <li>Inglés Intermedio Avanzado</li>
-                    </ul>
-
+                <ul class="ml-5" id="actividades_experiencia">
+                    <!--
+                    <li>Conocimiento solido de HTML, CSS y JavaScript standares y compatibilidad con navegadores.</li>
+                    <li>Experiencia Front-end con diseño responsivo, CSS3, Jquery, GSAP y Bootstrap.</li>
+                    <li>Experiencia en Back-end con Php, Laravel, Authorization/Authentication, Passport, creacion y consumo de RESTful APIs.</li>
+                    <li>Habilidades creativas de diseño gráfico y de interfaz de usuario con Illustrator y código SVG.</li>
+                    <li>Gestion eficiente del flujo de trabajo con Bash, Git, Ubuntu 16.04, Apache.</li>
+                    <li>Conocimientos Basicos de adminitracion de base de datos relacionales con Mysql y normalización. </li>
+                    <li>Inglés Intermedio Avanzado</li>
+                    -->
+                </ul>
                 <li>
                     <div style="height: 28px; width: 100%; background-color: #5A636B;" class="my-3 text-white">
-                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;Experiencia</h5>
+                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;Herramientas</h5>
                     </div>
                 </li>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Becario Web Developer | México, CDMX | enero 2019 - noviembre 2019</strong>
-                    <ul class="ml-5">
-                        <li>Desarrollo de nuevos modulos interactivos con JavaScript, Jquery en Landig Page.</li>
-                        <li>Implementacion, actualización de estilos para el sitio oficial Xynergia.</li>
-                        <li>Asistencia para el diseño de propuestas usando Adobe XD, Sketch y puesta en marcha con CSS3, Bootrsap, Jquery.</li>
-                        <li>Seguimiendo a posibles modificaciones, errores, o nuevos requerimientos lanzados por el cliente o empresa.</li>
-                    </ul>
+                <ul class="ml-5" id="herramientas_experiencia">
+                    <!--
+                    <li>Desarrollo de nuevos modulos interactivos con JavaScript, Jquery en Landig Page.</li>
+                    <li>Implementacion, actualización de estilos para el sitio oficial Xynergia.</li>
+                    <li>Asistencia para el diseño de propuestas usando Adobe XD, Sketch y puesta en marcha con CSS3, Bootrsap, Jquery.</li>
+                    <li>Seguimiendo a posibles modificaciones, errores, o nuevos requerimientos lanzados por el cliente o empresa.</li>
+                    -->
+                </ul>
             </ul>
             <br>
           </div>
@@ -490,5 +436,6 @@
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/portafolio.js"></script>
+    <script src="assets/js/experiencia.js"></script>
 </body>
 </html>
