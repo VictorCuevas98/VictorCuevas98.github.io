@@ -5,8 +5,8 @@ $emailuser = "axte_vic@hotmail.com";
 $cabecera  = "MIME-Version: 1.0"."\r\n";
 $cabecera .= "Content-type: text/html; charset=UTF-8"."\r\n";
 
-$email  = htmlentities($_POST["email"]);
 $nombre = htmlentities($_POST["name"]);
+$email  = htmlentities($_POST["email"]);
 $messageuser = htmlentities($_POST["asunto"]);
 $desc = str_replace("\n", "<br>", $_POST["message"]);
 $respuesta = $_POST["operation"];
