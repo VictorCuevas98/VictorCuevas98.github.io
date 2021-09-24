@@ -4,8 +4,8 @@
     <?php
     $_SESSION["token"] = md5(uniqid(mt_rand(), true));
     ?>
-    <meta name="csrf-token" content="<?=$_SESSION['token']?>">
     <meta charset="UTF-8">
+    <meta name="csrf-token" content=".<?=$_SESSION['token']?>.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Iconos -->
 
@@ -362,7 +362,7 @@
                 <script type="text/javascript">
 
                     $(document).ready(function() {
-                        $('#n1').val(Math.floor(Math.random()*10+1));
+                        $("#n1").val(Math.floor(Math.random()*10+1));
                         $('#n2').val(Math.floor(Math.random()*10+1));
                         $('#form-contact').submit(function(event) {
                             $('#respuesta').fadeOut(250);
