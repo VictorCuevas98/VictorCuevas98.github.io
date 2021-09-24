@@ -362,8 +362,6 @@
                 <script type="text/javascript">
 
                     $(document).ready(function() {
-                        $_SESSION["token"] = md5(uniqid(mt_rand(), true));
-                        $('meta[name="csrf-token"]').attr("content", )
                         $('#n1').val(Math.floor(Math.random()*10+1));
                         $('#n2').val(Math.floor(Math.random()*10+1));
                         $('#form-contact').submit(function(event) {
