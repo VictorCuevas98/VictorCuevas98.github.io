@@ -102,19 +102,19 @@ var $btnMobile = $('#btn-video-mobile');
 var $btnLink = $('#btn-web-link');
 
 $btnDesktop.click(function () {
-    changeVideo(currentProjectIndex, '-desktop');
+    changeVideo(currentExperienceProjectIndex, '-desktop');
 });
 
 $btnIpad.click(function () {
-    changeVideo(currentProjectIndex, '-ipad');
+    changeVideo(currentExperienceProjectIndex, '-ipad');
 });
 
 $btnMobile.click(function () {
-    changeVideo(currentProjectIndex, '-mobile');
+    changeVideo(currentExperienceProjectIndex, '-mobile');
 });
 
 $btnLink.click(function () {
-    window.open(experiencieData[currentProjectIndex].buttons[3]);
+    window.open(experiencieData[currentExperienceProjectIndex].buttons[3]);
 });
 */
 

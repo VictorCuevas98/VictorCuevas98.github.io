@@ -14,21 +14,21 @@ var experiencieData = [{
 
 /*----------  MODAL CLICKS  ----------*/
 
-var currentProjectIndex = 0;
+var currentExperienceProjectIndex = 0;
 
-var $portfolioModal = $('#experiencia-modal'),
-    $portfolioBtn = $('.btn-experiencia'),
-    $btnlink = $('#btn-experiencia');
+var $experienceModal = $('#experiencia-modal'),
+    $experienceBtn = $('.btn-experiencia'),
+    $experienceBtnlink = $('#btn-experiencia');
 
 //portfolio click
-$portfolioBtn.click(function () {
+$experienceBtn.click(function () {
 
-    var index = $portfolioBtn.index(this);
-    currentProjectIndex = index;
-    changeExperience(currentProjectIndex);
+    var index = $experienceBtn.index(this);
+    currentExperienceProjectIndex = index;
+    changeExperience(currentExperienceProjectIndex);
 
     //open modal
-    $portfolioModal.modal('show');
+    $experienceModal.modal('show');
     console.log('portafolio id index'+index);
 });
 
@@ -41,23 +41,23 @@ var $arrowLeft = $('#arrow-left'),
 
 $arrowLeft.click(function () {
 
-    currentProjectIndex = (currentProjectIndex === 0) ? (experiencieData.length - 1) : (currentProjectIndex -= 1);
-    changeProject(currentProjectIndex);
+    currentExperienceProjectIndex = (currentExperienceProjectIndex === 0) ? (experiencieData.length - 1) : (currentExperienceProjectIndex -= 1);
+    changeExperience(currentExperienceProjectIndex);
 
 
 });
 
 $arrowRight.click(function () {
 
-    currentProjectIndex = (currentProjectIndex === experiencieData.length - 1) ? (currentProjectIndex = 0) : (currentProjectIndex += 1);
-    changeProject(currentProjectIndex);
+    currentExperienceProjectIndex = (currentExperienceProjectIndex === experiencieData.length - 1) ? (currentExperienceProjectIndex = 0) : (currentExperienceProjectIndex += 1);
+    changeExperience(currentExperienceProjectIndex);
 
 });
 
 var $puesto_experiencia = $('#puesto_experiencia'),
     $actividades = $('#actividades_experiencia'),
     $herramientas = $('#herramientas_experiencia'),
-    $devices = $('.btn-device');
+    $devicesExperience = $('.btn-device');
 
 function changeExperience(index) {
 
@@ -72,15 +72,15 @@ function changeExperience(index) {
         $herramientas.append('<li>'+experiencieData[index].herramientas[number1]+'</li>');
     }
 
-    $btnlink.attr('href', experiencieData[index].buttons[1]);
+    $experienceBtnlink.attr('href', experiencieData[index].buttons[1]);
     //updates buttons
 
     var buttons = experiencieData[index].buttons;
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i] === false) {
-            $($devices[i]).addClass('visually-hidden');
+            $($devicesExperience[i]).addClass('visually-hidden');
         } else {
-            $($devices[i]).removeClass('visually-hidden');
+            $($devicesExperience[i]).removeClass('visually-hidden');
         }
     }
 
@@ -97,19 +97,19 @@ var $btnMobile = $('#btn-video-mobile');
 var $btnLink = $('#btn-web-link');
 
 $btnDesktop.click(function () {
-    changeVideo(currentProjectIndex, '-desktop');
+    changeVideo(currentExperienceProjectIndex, '-desktop');
 });
 
 $btnIpad.click(function () {
-    changeVideo(currentProjectIndex, '-ipad');
+    changeVideo(currentExperienceProjectIndex, '-ipad');
 });
 
 $btnMobile.click(function () {
-    changeVideo(currentProjectIndex, '-mobile');
+    changeVideo(currentExperienceProjectIndex, '-mobile');
 });
 
 $btnLink.click(function () {
-    window.open(experiencieData[currentProjectIndex].buttons[3]);
+    window.open(experiencieData[currentExperienceProjectIndex].buttons[3]);
 });
 */
 
