@@ -67,7 +67,7 @@ body::-webkit-scrollbar-track:active {
     text-align: center;
 }
 
-#header, .btn-portafolio, .btn-experience{
+#header, .btn-portafolio, .btn-experiencia{
     overflow: hidden;
 }
 
@@ -146,7 +146,8 @@ body::-webkit-scrollbar-track:active {
     max-width: 100%;
 }
 
-.btn-portafolio, .btn-experience{
+.btn-portafolio, .btn-experiencia
+{
     background-color: #8C4C35;
     display: block;
     position: relative;
@@ -160,7 +161,7 @@ body::-webkit-scrollbar-track:active {
     box-shadow: 0 0 5px #BF5934;
 }
 
-#experience .btn-portafolio, .btn-experience {
+#experience .btn-portafolio, .btn-experiencia {
     background-color:white;
     display: block;
     position: relative;
@@ -174,7 +175,7 @@ body::-webkit-scrollbar-track:active {
     box-shadow: 0 0 10px #c0c6c9;
 }
 
-.btn-portafolio h4, .btn-experience h4{
+.btn-portafolio h4, .btn-experiencia h4{
     display: block;
     margin: 0;
     position: absolute;
@@ -191,7 +192,7 @@ body::-webkit-scrollbar-track:active {
     transition: bottom ease .3s,opacity ease .3s;
 }
 
-#experience .btn-portafolio h4,#experience .btn-experience h4{
+#experience .btn-portafolio h4,#experience .btn-experiencia h4{
     display: block;
     margin: 0;
     position: absolute;
@@ -208,24 +209,24 @@ body::-webkit-scrollbar-track:active {
     transition: bottom ease .3s,opacity ease .3s;
 }
 
-.btn-portafolio img, .btn-experience img{
+.btn-portafolio img, .btn-experiencia img{
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
 
-.btn-portafolio:hover h4, .btn-experience:hover h4{
+.btn-portafolio:hover h4, .btn-experiencia:hover h4{
     bottom: 50%;
     opacity: 1;
 }
 
-#experience .btn-portafolio:hover h4,#experience .btn-experience:hover h4{
+#experience .btn-portafolio:hover h4,#experience .btn-experiencia:hover h4{
     top: 10%;
     opacity: 1;
 }
 
-.btn-portafolio:hover img, .btn-experience:hover img{
+.btn-portafolio:hover img, .btn-experiencia:hover img{
     opacity: .2;
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
