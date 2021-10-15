@@ -18,7 +18,8 @@ var currentExperienceProjectIndex = 0;
 
 var $experienceModal = $('#experiencia-modal'),
     $experienceBtn = $('.btn-experiencia'),
-    $experienceBtnlink = $('#btn-experiencia');
+    $experienceBtnlink = $('#btn-experiencia'),
+    $imgmodalexp = $('.img-exp');
 
 //portfolio click
 $experienceBtn.click(function () {
