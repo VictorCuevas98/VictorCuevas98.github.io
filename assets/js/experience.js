@@ -64,6 +64,9 @@ function changeExperience(index) {
 
     //fill data
     $puesto_experiencia.text(experiencieData[index].puesto);
+    $actividades.html('');
+    $herramientas.html('');
+
     var activities = experiencieData[index].actividades;
     for (var number = 0; number<activities.length; number++){
         $actividades.append('<li>'+experiencieData[index].actividades[number]+'</li>')
