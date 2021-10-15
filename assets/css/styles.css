@@ -115,7 +115,7 @@ body::-webkit-scrollbar-track:active {
     position: relative;
 }
 
-.skill h5{
+.skill h4 {
     color: white;
     display: block;
     margin: 0;
@@ -132,7 +132,7 @@ body::-webkit-scrollbar-track:active {
     transition: bottom ease 1s,opacity ease 1s;
 }
 
-.skill:hover h5{
+.skill:hover h4{
     opacity: 1;
 }
 
