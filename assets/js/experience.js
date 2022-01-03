@@ -1,15 +1,21 @@
 var experiencieData = [{
     'puesto': 'Becario Web Developer | México, CDMX | enero 2019 - noviembre 2019',
     'actividades': ['Analizar los requerimientos del cliente siguiendo la metodología ágil SCRUM', 'Desarrollar y diseñar actualizaciones basadas en los requerimientos del cliente de un solo modulo al mes','Usar la plataforma trello para dar seguimiento de los avances totales','Usar control de versiones con Git para asegurar el progeso diario o semanal', 'Creacion y consumo de Restful APIs, uso de OAuth2, Passport'],
-    'herramientas': ['Frameworks: Laravel v5.7, Bootstrap v4.6','Lenguage: PHP v7.0, CSS, JavaScript', 'Librerias de JavaScript: Jquery, GSAP', 'IDE: PhpStorm JetBrain', 'Cotrol de Versiones: Git', 'Base de Datos: PostgreSQL', 'Programas: Postman'],
+    'herramientas': ['Frameworks: Laravel v5.7, Bootstrap v4.6','Lenguajes: PHP v7.0, CSS, JavaScript', 'Librerias de JavaScript: Jquery, GSAP', 'IDE: PhpStorm JetBrain', 'Cotrol de Versiones: Git', 'Base de Datos: PostgreSQL', 'Programas: Postman'],
     'buttons': [false, 'http://xynergia.com'],
     'code': 'xynergia',
 }, {
-    'puesto': 'Web Developer Back-End',
+    'puesto': 'Web Developer Back-End ',
     'actividades': ['Diseñar e implementar nuevas funciones para renovar el sistema de abasto, inventario y control de almacenes para la Secretaría de Salud', 'Trabajar en el mantenimiento y desarrollo tecnológico del sistema', 'Colaborar en la revisión del código con la ayuda del control de versiones GIT'],
-    'herramientas': ['Frameworks: Laravel v6.0, Bootrstrap v5.1', 'Lenguage: PHP v7.1, CSS3, JavaScript ES5','Librerias de JavaScritps: Jquery, Select2, SweetAlert, etc', 'IDE: PhpStorm JetBrains, Visual Studio Code', 'Control de Versiones: Git', 'Base de Datos: PostgreSQL'],
+    'herramientas': ['Frameworks: Laravel v6.0, Bootrstrap v5.1', 'Lenguajes: PHP v7.1, CSS3, JavaScript ES5','Librerias de JavaScritps: Jquery, Select2, SweetAlert, etc', 'IDE: PhpStorm JetBrains, Visual Studio Code', 'Control de Versiones: Git', 'Base de Datos: PostgreSQL'],
     'buttons': [false, 'https://tics.finanzas.cdmx.gob.mx/saica/public/login'],
     'code': 'sedesa',
+}, {
+    'puesto': 'Full-stack Web Developer',
+    'actividades': ['Correccion de errores.', 'Creación de nuevas funciones.', 'Factorización de codigo.'],
+    'herramientas': ['Frameworks: Angular, React, Laravel, Bootrstrap', 'Lenguajes: PHP, CSS, JavaScript','Base de Datos: Postgres SQL, SQL Server, Mysql', 'Herramientas: Git, Visual Studio Code, DBeaver'],
+    'buttons': [false, 'https://www.bancoautofin.mx/'],
+    'code': 'autofin',
 }];
 
 /*----------  MODAL CLICKS  ----------*/
