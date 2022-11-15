@@ -24,17 +24,17 @@
     gsap.from(".pluma",{duration: 3, opacity: 0});
     //gsap.from(".cls-1",{duration: 5, drawSVG:0, ease:"power1.inOut", delay:1});
     //gsap.from(".cls-2",{duration: 5, drawSVG:0, ease:"power1.inOut", delay:1});
-    gsap.to(".pluma2", {duration: 3, x: 1000, opacity: 0 , ease: "slow (0.3, 2, false)", delay: 2});
-    gsap.to(".pluma1", {duration: 3, x: -1000, opacity: 0 , ease: "slow (0.1, 0.1, false)", delay: 2});
+    gsap.to(".pluma2", {duration: 5, x: 1000, opacity: 0 , ease: "slow (0.3, 2, false)", delay: 2});
+    gsap.to(".pluma1", {duration: 5, x: -1000, opacity: 0 , ease: "slow (0.1, 0.1, false)", delay: 2});
     
-    let tl = gsap.timeline({delay: 2})
-    .to("#text2", {duration:2, text: "Software Engineer"})
+    let tl = gsap.timeline({delay: 4})
+    .to("#text2", {duration:2, text: "Ing. Victor Cuevas"})
     .to("#text2",{duration:1, y:40, ease:"slow"})
     .from("#text1",{duration:1, y:-40, ease:"slow"},"-=1")
-    .to("#text1",{duration:3, text: "Victor Cuevas"});
+    .to("#text1",{duration:3, text: " Bienvenido al Curso de Subestaciones"});
 
 
-    gsap.to("#bg-video",{duration:2, opacity: 0.2, delay:6});
+    gsap.to("#bg-video",{duration:2, opacity: 0.2, delay:8});
 
 
     const lt = gsap.timeline({repeat:10, repeatDelay:2, yoyo:true, delay: 6});
@@ -43,32 +43,3 @@
     .to(".terminal", {duration: 3, text: ">_ SharedLibs: 1648K resident, 60 data, 80 linkedit."})
     .to(".terminal", {duration: 4, text: ">_ MemRegions: 31278 total, 1892M resident, 117 private, 564M shared."})
     .to(".terminal", {duration: 3, text: ">_ OhysMem: 5893M used (1191M wired). 18G unused."});
-
-
-    /*Animacion para navegar entre secciones */
-    $(function(){
-    
-        $('a[href*=\\#]').click(function() {
-   
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-            && location.hostname == this.hostname) {
-   
-                var $target = $(this.hash);
-   
-                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-   
-                if ($target.length) {
-   
-                    var targetOffset = $target.offset().top;
-   
-                    $('html,body').animate({scrollTop: targetOffset}, 1000);
-   
-                    return false;
-   
-               }
-   
-          }
-   
-      });
-   
-   });

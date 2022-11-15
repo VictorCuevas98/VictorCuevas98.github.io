@@ -370,20 +370,14 @@ header#header{
     background-color:black;
 }
 
-#portafolio, #experience{ 
+#portafolio, #experience, #planos, #simuladores{  
     /*color 3*/
     background-color:#3B403A ;
 }
 
-#skillset{
+#skillset, #contact, #videos{
     background-image: url('../img/sunset.jpeg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-#contact{
-    background-image: url('../img/desktop1.jpeg');
     background-attachment: fixed;
     background-position: center center;
 }
@@ -474,3 +468,9 @@ p.t2{
     font-size: 1px;
 }
 
+/******** Extras *********/
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
