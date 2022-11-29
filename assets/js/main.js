@@ -31,7 +31,9 @@
     .to("#text2", {duration:2, text: "Ing. Victor Cuevas"})
     .to("#text2",{duration:1, y:40, ease:"slow"})
     .from("#text1",{duration:1, y:-40, ease:"slow"},"-=1")
-    .to("#text1",{duration:3, text: " Bienvenido al Curso de Subestaciones"});
+    .to("#text1",{duration:3, text: " Bienvenido al Curso de Subestaciones"})
+    .to("#text3",{duration:3, text: "Aprender para cambiar, cambiar para mejorar"});
+
 
 
     gsap.to("#bg-video",{duration:2, opacity: 0.2, delay:8});

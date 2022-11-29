@@ -410,6 +410,11 @@ footer#footer{
     font-size: 24px;
 }
 
+#text3{
+    color: #afc0d0;
+    font-size: 24px;
+}
+
 span.terminal{
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
